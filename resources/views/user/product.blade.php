@@ -6,7 +6,7 @@
         <h3 class="product-head fw-bold wow fadeIn" data-wow-duration="3s">Products</h3>
       </div>
       <div class="d-flex justify-content-end mx-5">
-<form action="{{route('user.productGetSorting')}}" method="POST" id="sortForm" >
+<form action="{{route('user.productGetSorting')}}" style="z-index:5;" method="POST" id="sortForm" >
   {{csrf_field()}}
   <select class="form-select  form-select-sm m-2 mb-4 sort-by-menu z-3 wow fadeIn" name="sortBy" id="sortSelect" data-wow-duration="3s">
     <option class="sort-by-menu-option" value="date">Sort by Date</option>
