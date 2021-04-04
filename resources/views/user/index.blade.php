@@ -9,14 +9,6 @@
                  Everyone has own beauty and need to find out. Let's search for our
                  own beauty
                </h1>
-               <?php
-               $ip_add=$_SERVER['REMOTE_ADDR'];
-                foreach($ip_addresses as $ip_address){
-                if( $ip_add!=$ip_address->ip){
-                  DB::insert('insert into visitor_counts (ip) values (?)', [$ip_add]);
-                }
-               }
-               ?>
              </div>
              <div class="row">
                <div id="go-shop"></div>
