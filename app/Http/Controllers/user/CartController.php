@@ -61,7 +61,7 @@ class CartController extends Controller
 
         }
         elseif (isset($request->addList)){
-            $request->session()->flash('status', 'Task was successful!');
+            $request->session()->flash('status', 'Order was added');
             return redirect()->route('user.productdetail',$post->id);
         }
 }
@@ -96,6 +96,7 @@ class CartController extends Controller
             $order->status='Pending';
             $order->save();        
            }
+           $request->session()->flash('order success','Your order has been added successfully');
            session()->forget('cart');
        }
         return redirect()->route('user.order');

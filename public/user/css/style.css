@@ -438,6 +438,10 @@ background-color: #ce723b;
 border: 1px solid #ecf0f1;
 border-radius: 2px;
 }
+.order-mes{
+  display:flex;
+  justify-content:flex-end;
+}
 .order-button-click:hover{
   color: #ce723b;
   background-color:#ECF0F1;

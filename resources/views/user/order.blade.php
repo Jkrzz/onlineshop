@@ -19,6 +19,11 @@
             <input type="tel" name="phone"  class="phone-input" placeholder="Enter Phone No">
           </div>
         </div>
+        @if (Session::has('order success'))
+          <div class="order-mes">
+            <div class="alert alert-info text-center">{{Session::get('order success')}}</div>
+          </div>
+        @endif
         <table style="width:100%;"class="wow fadeIn" data-wow-duration="2s">
           <thead>
             <tr class="order-title">
