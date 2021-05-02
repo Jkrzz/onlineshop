@@ -68,7 +68,7 @@
              <div class="line"></div>
            </div>
          </div>
-         <div class=" featured-product">
+         <div class=" featured-product mx-5">
            @foreach ($latest_products as $latest_product)
            <div class="box product-box wow fadeInUp" data-wow-duration="2s">
             <a href="{{route('user.productdetail',$latest_product->id)}}">
