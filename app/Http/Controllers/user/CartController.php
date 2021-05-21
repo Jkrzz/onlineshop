@@ -43,7 +43,7 @@ class CartController extends Controller
                 return redirect()->route('user.order')->with('success',"Add to order");
             }
             else{
-                $request->session()->flash('status', 'Task was successful!');
+                $request->session()->flash('status', 'Order was added successfully');
                 return redirect()->route('user.productdetail',$post->id); 
             }
           } 
