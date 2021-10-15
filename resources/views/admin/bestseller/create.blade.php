@@ -34,7 +34,7 @@
               {{csrf_field()}}
               <div class="card-body">
                 <div class="form-group">
-                    <label for="pname">Post Name</label>
+                    <label for="pname">Product Name</label>
                     <select name="pname" class="form-control">
                         <option disabled selected>Select Post Name</option>
                        @foreach ($posts as $post)  
